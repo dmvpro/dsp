@@ -60,7 +60,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Emacs. I read a comparison of the various terminal editors and this seemed the most applicable to my needs.
 
 --
 
@@ -68,6 +68,6 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I have been using Atom during various Python classes.  I like that it has smart autocompletion, multiple panes, and tracks brackets.  The shortcuts I find most useful are: ⌘-/  to toggle comment (on/out) &  ⌘-⇧-d  to duplicate lines.  I added a python-tools package to customize my editor:  https://atom.io/packages/python-tools
 
  
