@@ -48,13 +48,17 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Python 2.7.10 came pre-installed on my computer.  I will use Py2.7 to be in line with the bootcamp course material.
 
 ###Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Type:
+```
+$ python
+```
+>> into the terminal window.
 
  
 
