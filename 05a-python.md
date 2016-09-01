@@ -21,8 +21,10 @@ How are Python lists and tuples similar and different? Which will work as keys i
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
 >> Python lists and sets are both collections of data but where they differ is that sets cannot contain duplicates and are unordered.  For example:  
-`['alpha', 'beta', 'delta', 'gamma', 'alpha', 'beta'] # LIST: ordered, contains duplicates`  
-`{'delta', 'alpha', 'gamma', 'beta'}                  # SET: unordered, no duplicates`  
+```python
+['alpha', 'beta', 'delta', 'gamma', 'alpha', 'beta'] # LIST: ordered, contains duplicates 
+{'delta', 'alpha', 'gamma', 'beta'}                  # SET: unordered, no duplicates
+```
 >> Performance-wise, a hash lookup is used (which is why sets are unordered) to find an element in a set. This makes `__contains__` (in operator) a lot more efficient for finding elements in sets than lists.
 
 ---
@@ -42,7 +44,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
 >> List comprehensions are a tool for transforming one list into another list, usually by making a concise, single-line of code that could be written in a less efficient, less concise `for` clause.  For example:
-```
+```python
 doubled_odds = map(lambda n: n * 2, filter(lambda n: n % 2 == 1, numbers))  #use of map & filter
 doubled_odds = [n * 2 for n in numbers if n % 2 == 1]                       #list comprehension
 ```
