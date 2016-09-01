@@ -47,10 +47,9 @@ doubled_odds = map(lambda n: n * 2, filter(lambda n: n % 2 == 1, numbers))  #use
 doubled_odds = [n * 2 for n in numbers if n % 2 == 1]                       #list comprehension
 ```
 >> The capabilities of a list comprehension are very comparable, but the major difference is that list comprehension is more concise/easy-to-read and efficient than using map/filter with lambda. For set and dictionary comprehensions, it is a matter of using the proper formats for sets/dictionaries, for example:
-```
+```python
 s = { x for x in range(10) }     # set comprehension occurs within curly brackets
-
-L = ['a', 'b', 'c', 'd']                            # first create a list of keys for the dictionary
+L = ['a', 'b', 'c', 'd']         # set dictionary: 1st create a list of keys 
 {letter: i for i,letter in enumerate(L, start=1)}   # then create a dictionary comprehension
 ```
 
