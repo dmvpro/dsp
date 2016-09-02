@@ -3,6 +3,12 @@
 
 
 def donuts(count):
+    if count < 10:
+        numdonuts = count
+    else:
+        numdonuts = 'many'
+    return 'Number of donuts: ' + str(numdonuts)
+    
     """
     Given an int count of a number of donuts, return a string of the
     form 'Number of donuts: <count>', where <count> is the number
@@ -22,6 +28,10 @@ def donuts(count):
 
 
 def both_ends(s):
+    if len(s) > 1:
+        return s[0:2] + s[-2:]
+    else:
+        return ''
     """
     Given a string s, return a string made of the first 2 and the last
     2 chars of the original string, so 'spring' yields 'spng'.
@@ -41,6 +51,10 @@ def both_ends(s):
 
 
 def fix_start(s):
+    char1 = s[0]
+    s = s.replace(char1, '*')
+    s = char1 + s[1:]
+    return s
     """
     Given a string s, return a string where all occurences of its
     first char have been changed to '*', except do not change the
@@ -60,6 +74,9 @@ def fix_start(s):
 
 
 def mix_up(a, b):
+    char1a = a[:2]
+    char1b = b[:2]
+    return char1b + a[2:] + ' ' + char1a + b[2:]
     """
     Given strings a and b, return a single string with a and b
     separated by a space '<a> <b>', except swap the first 2 chars of
@@ -78,6 +95,13 @@ def mix_up(a, b):
 
 
 def verbing(s):
+    if len(s) > 2:
+        if s[-3:] == 'ing':
+            return s + 'ly'
+        else:
+            return s + 'ing'
+    else:
+        return s
     """
     Given a string, if its length is at least 3, add 'ing' to its end.
     Unless it already ends in 'ing', in which case add 'ly' instead.
@@ -95,6 +119,11 @@ def verbing(s):
 
 
 def not_bad(s):
+    nots = s.find('not')
+    bads = s.find('bad')
+    if bads > nots:
+        return s[:nots] + 'good' + s[(bads+3):]
+    return s
     """
     Given a string, find the first appearance of the substring 'not'
     and 'bad'. If the 'bad' follows the 'not', replace the whole
@@ -115,6 +144,20 @@ def not_bad(s):
 
 
 def front_back(a, b):
+    if len(a) % 2 == 0:
+        ahalf = len(a) // 2
+    else:
+        ahalf = len(a) // 2 + 1
+    if len(b) % 2 == 0:
+        bhalf = len(b) // 2
+    else:
+        bhalf = len(b) // 2 + 1
+    fronta = a[0:ahalf]
+    backa = a[ahalf:]
+    frontb = b[0:bhalf]
+    backb = b [bhalf:]
+    return fronta + frontb + backa + backb
+        
     """
     Consider dividing a string into two halves. If the length is even,
     the front and back halves are the same length. If the length is
