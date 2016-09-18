@@ -1,3 +1,4 @@
+```python
 import thinkstats2
 import nsfg
 import math
@@ -41,3 +42,4 @@ d_prg = diff2 / math.sqrt(pooled_var2)
 print d_prg
 
 # d_wgt = -0.08867  vs. d_prg = 0.02795
+```
