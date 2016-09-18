@@ -1,5 +1,5 @@
 [Think Stats Chapter 3 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2004.html#toc31) (actual vs. biased)
-
+```python
 import chap01soln
 import thinkstats2
 import thinkplot
@@ -43,3 +43,4 @@ thinkplot.Show()
 #calculate means
 pmf.Mean()
 biased.Mean()
+```
